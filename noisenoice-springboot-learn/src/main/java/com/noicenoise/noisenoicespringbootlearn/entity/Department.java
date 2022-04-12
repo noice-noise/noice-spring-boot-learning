@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 @Entity
@@ -17,7 +16,6 @@ public class Department {
 
     @NotBlank(message = "Please Add Department Name")
     @Length(min = 1, max = 50)
-    @Valid
     private String departmentName;
     private String departmentAddress;
     private String departmentCode;
